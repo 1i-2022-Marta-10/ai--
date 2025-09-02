@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sztuczna Inteligencja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .btn-container {
+      margin: 30px 0;
+    }
+
+    button {
+      background-color: #ffffff22;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: 0.3s ease;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #1f1c2c;
+    }
+
+    .output {
+      margin-top: 40px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌐 Sztuczna Inteligencja – Plusy i Minusy</h1>
+  <p>Wybierz, co chcesz zobaczyć:</p>
+
+  <div class="btn-container">
+    <button onclick="showPros()">Plusy</button>
+    <button onclick="showCons()">Minusy</button>
+  </div>
+
+  <div class="output" id="output"></div>
+
+  <script>
+    function showPros() {
+      document.getElementById("output").innerHTML = `
+        <h2> :> Plusy AI</h2>
+        <ul>
+          <li>Analiza dużych ilości danych (np. potrzebuje najlepszej jakości mleka a sztuczna inteligencja pomoże odszukać najlepsze)</li>
+          <li>Wsparcie w opiece zdrowotnej (pomoc w rozpoznaniu lekkiej choroby lub np. czy można brak dane leki na pusty żołądek)</li>
+          <li>Poprawa bezpieczeństwa (AI potrafi dużo szybciej odnaleźć zagrożenia systemu i też zapobiegać cyberatakom)</li>
+          <li>Wsparcie w edukacji i nauce (pomoc w zrobieniu ciężkiego zadania domowego)</li>
+          <li>Można pytać o co się chce w danym momencie 24/7</li>
+          <li>Wsparcie w tłumaczeniu języków</li>
+          <li>Zwiększenie dokładności i redukcja błędów</li>
+          <li>Lepsze zarządzanie ryzykiem</li>
+          <li>Poprawa jakości życia osób z niepełnosprawnościami (rozpoznawanie mowy, tłumaczenie języka migowego czy sterowanie urządzeniami za pomocą głosu)</li>
+          <li>Rozwój kreatywnych narzędzi (czyli pomoc np. dla muzyków i projektantów, generując pomysły, obrazy, kompozycje oraz teksty)</li>
+        </ul>
+      `;
+    }
+
+    function showCons() {
+      document.getElementById("output").innerHTML = `
+        <h2> :< Minusy AI</h2>
+        <ul>
+          <li>Utrata miejsc pracy – automatyzacja wypiera ludzi z wielu zawodów, zwłaszcza w produkcji, logistyce i usługach</li>
+          <li>Brak przejrzystości – wiele algorytmów działa jak „czarne skrzynki”, których decyzji nie da się łatwo wyjaśnić</li>
+          <li>Dezinformacja – AI może generować fałszywe treści, deepfake’i i manipulować opinią publiczną</li>
+          <li>Utrata prywatności – systemy AI zbierają i analizują ogromne ilości danych osobowych</li>
+          <li>Brak empatii – AI nie rozumie emocji, co może prowadzić do nieadekwatnych reakcji w sytuacjach wymagających wrażliwości.</li>
+          <li>Uzależnienie od technologii – nadmierne poleganie na AI może osłabić zdolności poznawcze i decyzyjne ludzi.</li>
+          <li>Uzależnienie od technologii – nadmierne poleganie na AI może osłabić zdolności poznawcze i decyzyjne ludzi.</li>
+          <li>Trudności w regulacji – prawo nie nadąża za rozwojem AI, co prowadzi do luk i nadużyć</li>
+          <li>Zagrożenie dla bezpieczeństwa – AI może być używana w cyberatakach, autonomicznych broniach i systemach nadzoru.</li>
+          <li>Brak odpowiedzialności – trudno ustalić, kto ponosi winę za błędy AI: twórca, użytkownik czy system?</li>
+        </ul>
+      `;
+    }
+  </script>
+</body>
+
+</html>
