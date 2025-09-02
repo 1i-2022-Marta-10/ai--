@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sztuczna Inteligencja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .btn-container {
+      margin: 30px 0;
+    }
+
+    button {
+      background-color: #ffffff22;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: 0.3s ease;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #1f1c2c;
+    }
+
+    .output {
+      margin-top: 40px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌐 Sztuczna Inteligencja – Plusy i Minusy</h1>
+  <p>Wybierz, co chcesz zobaczyć:</p>
+
+  <div class="btn-container">
+    <button onclick="showPros()">Plusy</button>
+    <button onclick="showCons()">Minusy</button>
+  </div>
+
+  <div class="output" id="output"></div>
+
+  <script>
+    function showPros() {
+      document.getElementById("output").innerHTML = `
+        <h2> :> Plusy AI</h2>
+        <ul>
+          <li>Automatyzacja procesów i zwiększenie efektywności</li>
+          <li>Wsparcie w medycynie – diagnozy, analiza obrazów</li>
+          <li>Personalizacja usług i treści</li>
+          <li>Rozwój nowych technologii i innowacji</li>
+          <li>Pomoc w edukacji i dostęp do wiedzy</li>
+        </ul>
+      `;
+    }
+
+    function showCons() {
+      document.getElementById("output").innerHTML = `
+        <h2> :< Minusy AI</h2>
+        <ul>
+          <li>Ryzyko utraty miejsc pracy przez automatyzację</li>
+          <li>Brak przejrzystości algorytmów</li>
+          <li>Możliwość nadużyć i inwigilacji</li>
+          <li>Dehumanizacja relacji międzyludzkich</li>
+          <li>Uzależnienie od technologii i utrata autonomii</li>
+        </ul>
+      `;
+    }
+  </script>
+</body>
+</html>
