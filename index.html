@@ -47,6 +47,25 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .pros {
+      color: #00ff99;
+      background-color: #00332244;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .cons {
+      color: #66ccff;
+      background-color: #00224444;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
@@ -63,40 +82,44 @@
   <script>
     function showPros() {
       document.getElementById("output").innerHTML = `
-        <h2> :> Plusy AI</h2>
-        <ul>
-          <li>Analiza dużych ilości danych (np. potrzebuje najlepszej jakości mleka a sztuczna inteligencja pomoże odszukać najlepsze)</li>
-          <li>Wsparcie w opiece zdrowotnej (pomoc w rozpoznaniu lekkiej choroby lub np. czy można brak dane leki na pusty żołądek)</li>
-          <li>Poprawa bezpieczeństwa (AI potrafi dużo szybciej odnaleźć zagrożenia systemu i też zapobiegać cyberatakom)</li>
-          <li>Wsparcie w edukacji i nauce (pomoc w zrobieniu ciężkiego zadania domowego)</li>
-          <li>Można pytać o co się chce w danym momencie 24/7</li>
-          <li>Wsparcie w tłumaczeniu języków</li>
-          <li>Zwiększenie dokładności i redukcja błędów</li>
-          <li>Lepsze zarządzanie ryzykiem</li>
-          <li>Poprawa jakości życia osób z niepełnosprawnościami (rozpoznawanie mowy, tłumaczenie języka migowego czy sterowanie urządzeniami za pomocą głosu)</li>
-          <li>Rozwój kreatywnych narzędzi (czyli pomoc np. dla muzyków i projektantów, generując pomysły, obrazy, kompozycje oraz teksty)</li>
-        </ul>
+        <div class="pros">
+          <h2> :> Plusy AI</h2>
+          <ul>
+            <li>Analiza dużych ilości danych (np. potrzebuje najlepszej jakości mleka a sztuczna inteligencja pomoże odszukać najlepsze)</li>
+            <li>Wsparcie w opiece zdrowotnej (pomoc w rozpoznaniu lekkiej choroby lub np. czy można brak dane leki na pusty żołądek)</li>
+            <li>Poprawa bezpieczeństwa (AI potrafi dużo szybciej odnaleźć zagrożenia systemu i też zapobiegać cyberatakom)</li>
+            <li>Wsparcie w edukacji i nauce (pomoc w zrobieniu ciężkiego zadania domowego)</li>
+            <li>Można pytać o co się chce w danym momencie 24/7</li>
+            <li>Wsparcie w tłumaczeniu języków</li>
+            <li>Zwiększenie dokładności i redukcja błędów</li>
+            <li>Lepsze zarządzanie ryzykiem</li>
+            <li>Poprawa jakości życia osób z niepełnosprawnościami (rozpoznawanie mowy, tłumaczenie języka migowego czy sterowanie urządzeniami za pomocą głosu)</li>
+            <li>Rozwój kreatywnych narzędzi (czyli pomoc np. dla muzyków i projektantów, generując pomysły, obrazy, kompozycje oraz teksty)</li>
+          </ul>
+        </div>
       `;
     }
 
     function showCons() {
       document.getElementById("output").innerHTML = `
-        <h2> :< Minusy AI</h2>
-        <ul>
-          <li>Utrata miejsc pracy – automatyzacja wypiera ludzi z wielu zawodów, zwłaszcza w produkcji, logistyce i usługach</li>
-          <li>Brak przejrzystości – wiele algorytmów działa jak „czarne skrzynki”, których decyzji nie da się łatwo wyjaśnić</li>
-          <li>Dezinformacja – AI może generować fałszywe treści, deepfake’i i manipulować opinią publiczną</li>
-          <li>Utrata prywatności – systemy AI zbierają i analizują ogromne ilości danych osobowych</li>
-          <li>Brak empatii – AI nie rozumie emocji, co może prowadzić do nieadekwatnych reakcji w sytuacjach wymagających wrażliwości.</li>
-          <li>Uzależnienie od technologii – nadmierne poleganie na AI może osłabić zdolności poznawcze i decyzyjne ludzi.</li>
-          <li>Uzależnienie od technologii – nadmierne poleganie na AI może osłabić zdolności poznawcze i decyzyjne ludzi.</li>
-          <li>Trudności w regulacji – prawo nie nadąża za rozwojem AI, co prowadzi do luk i nadużyć</li>
-          <li>Zagrożenie dla bezpieczeństwa – AI może być używana w cyberatakach, autonomicznych broniach i systemach nadzoru.</li>
-          <li>Brak odpowiedzialności – trudno ustalić, kto ponosi winę za błędy AI: twórca, użytkownik czy system?</li>
-        </ul>
+        <div class="cons">
+          <h2> :< Minusy AI</h2>
+          <ul>
+            <li>Utrata miejsc pracy – automatyzacja wypiera ludzi z wielu zawodów, zwłaszcza w produkcji, logistyce i usługach</li>
+            <li>Brak przejrzystości – wiele algorytmów działa jak „czarne skrzynki”, których decyzji nie da się łatwo wyjaśnić</li>
+            <li>Dezinformacja – AI może generować fałszywe treści, deepfake’i i manipulować opinią publiczną</li>
+            <li>Utrata prywatności – systemy AI zbierają i analizują ogromne ilości danych osobowych</li>
+            <li>Brak empatii – AI nie rozumie emocji, co może prowadzić do nieadekwatnych reakcji w sytuacjach wymagających wrażliwości.</li>
+            <li>Uzależnienie od technologii – nadmierne poleganie na AI może osłabić zdolności poznawcze i decyzyjne ludzi.</li>
+            <li>Uzależnienie od technologii – nadmierne poleganie na AI może osłabić zdolności poznawcze i decyzyjne ludzi.</li>
+            <li>Trudności w regulacji – prawo nie nadąża za rozwojem AI, co prowadzi do luk i nadużyć</li>
+            <li>Zagrożenie dla bezpieczeństwa – AI może być używana w cyberatakach, autonomicznych broniach i systemach nadzoru.</li>
+            <li>Brak odpowiedzialności – trudno ustalić, kto ponosi winę za błędy AI: twórca, użytkownik czy system?</li>
+          </ul>
+        </div>
       `;
     }
   </script>
 </body>
-
 </html>
+
